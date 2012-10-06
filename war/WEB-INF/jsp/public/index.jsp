@@ -29,7 +29,7 @@
 	</div> -->
 	
 		<div class="centerArea">
-			<img src="/img/front.jpg" />
+			<!-- <img src="/img/front.jpg" /> -->
 
 			<div class="menuRow">
 				<div id="kontakt" class="head">KONTAKT</div>
