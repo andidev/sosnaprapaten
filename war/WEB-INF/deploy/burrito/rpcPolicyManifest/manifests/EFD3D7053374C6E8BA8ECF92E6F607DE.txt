@@ -1,0 +1,2 @@
+serviceClass: burrito.client.crud.CrudService
+path: 8940D1A202F67DCE5D677BA0D15347A4.gwt.rpc

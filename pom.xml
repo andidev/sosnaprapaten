@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Naprapat2</groupId>
+  <artifactId>Naprapat2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+<!-- Copy dependencies to war/WEB-INF/lib for GAE proj compliance. -->
+  <profiles>
+    <profile>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>copy-dependencies</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>copy-dependencies</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.directory}/war/WEB-INF/lib/</outputDirectory>
+                  <overWriteReleases>false</overWriteReleases>
+                  <overWriteSnapshots>false</overWriteSnapshots>
+                  <overWriteIfNewer>true</overWriteIfNewer>
+                  <excludeArtifactIds>gwt-user,gwt-dev</excludeArtifactIds>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+  
+  	<dependencies>
+ 
+		<!-- Spring framework -->
+
+		<dependency>
+			<groupId>siena</groupId>
+			<artifactId>siena</artifactId>
+			<version>1.0.0-b6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>0.11.4</version>
+		</dependency>
+		<dependency>
+			<groupId>burrito</groupId>
+			<artifactId>burrito</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+			<exclusion>
+			<groupId>com.yahoo.platform.yui</groupId>
+			<artifactId>yuicompressor</artifactId>
+			</exclusion>
+			<exclusion>
+			<groupId>rhino</groupId>
+			<artifactId>js</artifactId>
+			</exclusion>
+			<exclusion>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-apiservlet-api</artifactId>
+			</exclusion>
+			<exclusion>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>taco</groupId>
+			<artifactId>taco</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+			<exclusion>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			</exclusion>
+			</exclusions>
+		</dependency>
+  	</dependencies>
+  
+  
+  
+</project>

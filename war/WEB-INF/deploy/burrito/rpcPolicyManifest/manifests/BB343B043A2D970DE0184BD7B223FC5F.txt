@@ -1,0 +1,2 @@
+serviceClass: burrito.client.widgets.services.BlobService
+path: BBAED80472742EF86A9C4FE0DF526E88.gwt.rpc

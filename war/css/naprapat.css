@@ -1,0 +1,76 @@
+
+.naprapat {
+    min-width: 600px;
+    max-width: 1200px;
+    min-height: 100%;
+    width: 90%;
+    
+	position: relative;
+	top: 10%;
+	left: 4%;
+		
+}
+
+.naprapat .centerArea {
+	position: absolute;
+	top: 2%;
+	left: 25%;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+.naprapat .logo {
+
+	height: 118px	
+}
+
+.naprapat .centerArea .menuRow {
+	position: absolute;
+	top: 102%;
+	z-index: 3;
+	opacity: 0.8;
+
+}
+
+.naprapat .centerArea .menuRow .head {
+	margin-right: 52px;
+	font-family: Calibri;
+	font-size: 15pt;
+	background-color: rgba(146, 135, 135, 0.5);
+	cursor: hand;
+	float: left;
+}
+
+.naprapat .contentArea {
+	position: absolute;
+	left: 38%;
+	top: 115%;
+	font-family: Calibri;
+	font-size: 12pt;
+}
+
+.naprapat .logotype {
+	position: absolute;
+	z-index: 2;
+	top: 2%;
+	left: 25%;
+}
+
+
+.naprapat .menu {
+	float: left;
+	
+}
+
+.naprapat .subMenu {
+	background-color: white;
+	opacity: 1;
+}
+
+.naprapat #behandlning {
+	width: 125px;
+}
+
+.naprapat #priser {
+	margin-right: 0;
+}

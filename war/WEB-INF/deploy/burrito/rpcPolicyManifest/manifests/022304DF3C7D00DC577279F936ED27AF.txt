@@ -1,0 +1,2 @@
+serviceClass: burrito.client.sitelet.SiteletService
+path: A40BCE995D315897059BC492BB85D268.gwt.rpc

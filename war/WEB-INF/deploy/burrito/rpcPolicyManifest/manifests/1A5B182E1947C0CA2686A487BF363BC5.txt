@@ -1,0 +1,2 @@
+serviceClass: burrito.client.widgets.services.BBCodeService
+path: 931D4773B899C8FFDDDEB9830740DDE5.gwt.rpc
